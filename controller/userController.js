@@ -1,6 +1,15 @@
+const users = [
+  { name: "billy", age: "20" },
+  { name: "franky", age: "20" },
+];
+
 exports.getUser = (req, res) => {
   // req
-  res.status(200).json({ msg: "hello world" });
+  res.status(200).json({
+    result: users,
+    msg: "hello world",
+    data: users,
+  });
 };
 
 exports.getUserid = (req, res) => {
